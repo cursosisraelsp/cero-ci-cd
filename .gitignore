@@ -1,0 +1,40 @@
+# ==========================================
+# 1. Dependencias Globales y Locales
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# 2. Capa de Presentación (Next.js / Frontend)
+# ==========================================
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel
+
+# ==========================================
+# 3. Lógica de Negocio (Node.js / Backend)
+# ==========================================
+backend/dist/
+backend/build/
+
+# ==========================================
+# 4. Seguridad y Credenciales (¡Crítico!)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# ==========================================
+# 5. Logs del Sistema y Herramientas
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+.DS_Store
+Thumbs.db
