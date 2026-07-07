@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                          /* Versión de JS de salida moderna */
+    "module": "NodeNext",                        /* Gestión de módulos nativa de Node.js */
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",                          /* Carpeta donde se guardará el JS compilado */
+    "rootDir": "./src",                          /* Dónde buscar el código fuente de TypeScript */
+    "strict": true,                              /* Habilita todas las comprobaciones estrictas */
+    "esModuleInterop": true,                     /* Compatibilidad con módulos CommonJS/ESM */
+    "skipLibCheck": true,                        /* Omite la comprobación de tipos de librerías externas */
+    "forceConsistentCasingInFileNames": true     /* Respeta mayúsculas/minúsculas en importaciones */
+  },
+  "include": ["src/**/*"]                        /* Solo compila lo que esté en la carpeta src */
+}
