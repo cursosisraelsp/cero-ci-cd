@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar el código del repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar el entorno de Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-node: '20'
+        cache: 'npm'
+
+    - name: Instalar dependencias globales del Monorepo
+      run: npm install
+
+    - name: Validar y Compilar TypeScript en el Backend
+      run: |
+        cd backend
+        npm run build
+
+    - name: Validar y Compilar Frontend (Next.js)
+      run: |
+        cd frontend
+        npm run build
