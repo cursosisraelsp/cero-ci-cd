@@ -50,7 +50,7 @@ export default function Home() {
         {/* Sección de Conexión Full Stack con Render */}
         <div className="mt-8 border-t border-slate-100 pt-6 dark:border-slate-800">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            Estado da API de Backend (Render)
+            Estado da API de Backend (Render) - 
           </h2>
           
           <div className="mt-4 flex items-center gap-3 rounded-lg border border-slate-100 bg-slate-50/50 p-4 dark:border-slate-800/50 dark:bg-slate-900/50">
